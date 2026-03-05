@@ -1,12 +1,12 @@
 
 import CountCardBg from '../../assets/vector1.png';
-const CountCard = ({title,color1,color2}) => {
+const CountCard = ({title,color1,color2, taskAdded ,taskResolved}) => {
 
     return (
-        <div className= {`card bg-[${CountCardBg}]  bg-linear-65 from-[${color1}] to-[${color2}] w-96 py-8`}>
+        <div className= {`card bg-[${CountCardBg}]  bg-linear-to-r from-[${color1}] to-[${color2}] lg:w-96 py-8`}>
             <div className={`card-body  items-center text-center`}>
                 <h2 className="card-title text-white">{title}</h2>
-                <p className='text-4xl font-bold'>0</p>
+                <p className='text-4xl font-bold'> {title === "In-Progress" ? taskAdded.length : taskResolved.length}</p>
             </div>
         </div>
     );

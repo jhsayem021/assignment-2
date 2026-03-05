@@ -3,7 +3,7 @@ import React from 'react';
 const Navber = () => {
     return (
         <div>
-            <div className="navbar bg-base-100 max-w-[1200px] mx-auto ">
+            <div className="navbar bg-base-100 max-w-[1440px] mx-auto ">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -12,15 +12,12 @@ const Navber = () => {
                         <ul
                             tabIndex="-1"
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                            <li><a>Item 1</a></li>
-                            <li>
-                                <a>Parent</a>
-                                <ul className="p-2">
-                                    <li><a>Submenu 1</a></li>
-                                    <li><a>Submenu 2</a></li>
-                                </ul>
-                            </li>
-                            <li><a>Item 3</a></li>
+                            <li><a>Home</a></li>
+                        <li><a>FAQ</a></li>
+                        <li><a>Changelog</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Download</a></li>
+                        <li><a>Contact</a></li>
                         </ul>
                     </div>
                     <a className="text-xl font-bold">CS — Ticket System</a>
@@ -37,7 +34,7 @@ const Navber = () => {
                         <li><a>Contact</a></li>
                     </ul>
                 </div>
-                    <a className="btn">+ New Tickets</a>
+                    <button className="btn bg-linear-to-r from-cyan-500 to-blue-500 text-[#FFFFFF]">+ New Tickets</button>
                 </div>
             </div>
         </div>
