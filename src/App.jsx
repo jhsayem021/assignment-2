@@ -5,6 +5,7 @@ import CountCard from './components/CountCard/CountCard'
 import Navber from './components/Navber/Navber'
 import TaskList from './components/TaskList/TaskList'
 import { Bounce, toast, ToastContainer } from 'react-toastify'
+import Footer from './components/Footer/Footer'
 function App() {
   const [taskAdded, setTaskAdded] = useState([])
   const [taskResolved, setTaskResolved] = useState([])
@@ -101,6 +102,7 @@ function App() {
         </Suspense>
         <TaskList taskAdded={taskAdded} taskResolved={taskResolved} handleTaskResolve={handleTaskResolve}></TaskList>
       </div>
+      <Footer></Footer>
     </>
   )
 }
